@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="validateLoginPage.LoginPage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateLoginPage"/>
+        </methods>
+      </class> <!-- validateLoginPage.LoginPage -->
+      <class name="validateLoginPage.BackTOLogin">
+        <methods>
+          <include name="gotologinpage"/>
+          <include name="launchBrowser"/>
+          <include name="Registerpage" invocation-numbers="0"/>
+          <include name="validateLoginPage"/>
+        </methods>
+      </class> <!-- validateLoginPage.BackTOLogin -->
+      <class name="validateLoginPage.NewUserPage">
+        <methods>
+          <include name="Registerpage" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="validateLoginPage"/>
+        </methods>
+      </class> <!-- validateLoginPage.NewUserPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
